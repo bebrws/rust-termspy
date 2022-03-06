@@ -30,6 +30,10 @@ Maybe your GUI process is doing the analysis of this information and then showin
 
 This should work on both Linux and OSX.
 
+# TODO
+
+- Check isatty and if not, don't do this whole thing
+
 # Credits
 
 Again, I have learned a TON from nw0's [session-manager](https://github.com/nw0/session-manager). Great project..
