@@ -133,7 +133,9 @@ async fn event_loop<W: Write>(
 
 fn main() -> std::io::Result<()> {
     let is_tty = termion::is_tty(&std::io::stdin().as_raw_fd());
-    dbg!(is_tty);
+    if !is_tty {
+        panic!("Not a tty");
+    }
 
     let mut tty_output = termion::get_tty()?.into_raw_mode()?;
     let input_events = tty_output.try_clone()?.events_and_raw();
