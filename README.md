@@ -1,4 +1,4 @@
-# Simple Rust pseudoterminal-based login session example to read user input and pty/terminal output of a terminal session
+# Simple Rust pseudoterminal-based login session example to read user input and output of a terminal session
 
 I have been playing around with different OSX utilities for developer UX for a few years. Mostly stuff similar to [Flashlight](https://github.com/nate-parrott/Flashlight).
 
